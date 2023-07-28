@@ -12,7 +12,7 @@ namespace CubesGameGUI
         private int KValue;
         private Player Player = new Player("Player");
         private Player Computer = new Player("Computer");
-        private Player CurrentPlayer = new Player("CurrentPlayer");
+        private Player CurrentPlayer = new Player();
 
         public MainWindow()
         {

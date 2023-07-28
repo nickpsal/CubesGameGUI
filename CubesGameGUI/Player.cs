@@ -11,7 +11,7 @@ namespace CubesGameGUI
         public string PlayerName { get; set; }
         public int PlayerScore { get; set; }
 
-        public Player(string playerName)
+        public Player(string playerName = "CurrentPlayer")
         {
             PlayerName = playerName;
             PlayerScore = 0;
