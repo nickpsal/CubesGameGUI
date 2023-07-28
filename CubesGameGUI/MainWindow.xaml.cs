@@ -30,22 +30,6 @@ namespace CubesGameGUI
             PlayGameButton.IsEnabled = true;
         }
 
-        private void PlayGameButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckPlayerInput())
-            {
-                CurrentPlayer = Computer;
-                PlayGameButton.IsEnabled = false;
-                MCubesText.IsEnabled = false;
-                KCubesText.IsEnabled = false;
-                Choise1Btn.IsEnabled = true;
-                Choise2Btn.IsEnabled = true;
-                ChoiseKBtn.IsEnabled = true;
-                ChoiseKBtn.Content = KValue;
-                getComputerMove();
-            }
-        }
-
         private bool CheckPlayerInput()
         {
             string M = MCubesText.Text;
@@ -85,6 +69,22 @@ namespace CubesGameGUI
                 CheckIfWin();
             }
             getComputerMove();
+        }
+
+        private void PlayGameButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (CheckPlayerInput())
+            {
+                CurrentPlayer = Computer;
+                PlayGameButton.IsEnabled = false;
+                MCubesText.IsEnabled = false;
+                KCubesText.IsEnabled = false;
+                Choise1Btn.IsEnabled = true;
+                Choise2Btn.IsEnabled = true;
+                ChoiseKBtn.IsEnabled = true;
+                ChoiseKBtn.Content = KValue;
+                getComputerMove();
+            }
         }
 
         private void getComputerMove()
