@@ -83,10 +83,8 @@ namespace CubesGameGUI
             if (MValue == 0)
             {
                 CheckIfWin();
-            } else
-            {
-                getComputerMove();
             }
+            getComputerMove();
         }
 
         private void getComputerMove()
@@ -105,10 +103,7 @@ namespace CubesGameGUI
             {
                 CheckIfWin();
             }
-            else
-            {
-                CurrentPlayer = Player;
-            }
+            CurrentPlayer = Player;
         }
 
         private void CheckIfWin()
